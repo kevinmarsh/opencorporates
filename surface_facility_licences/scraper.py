@@ -48,7 +48,7 @@ for date_ref, url in daily_links:
     data = {
         "sample_date": str(datetime.date.today()),
         "source_url": url,
-        "date": datetime.datetime.strptime(date_ref, "%m%d%Y").strftime("%Y-%m-%d") # this is the date the data was released not when it was scraped
+        "date": datetime.datetime.strptime(date_ref, "%m%d%Y").strftime("%Y-%m-%d")  # this is the date the data was released not when it was scraped
     }
     try:
         soup = get_soup(url, session)
@@ -56,9 +56,9 @@ for date_ref, url in daily_links:
         # This is just to compensate for a wifi dropping constantly during pycon, can probably be removed once uploaded
         turbotlib.log(e)
 
-    _td = soup.find(text="Licensee Name") # this is pretty fragile just searching for "Licensee Name"
+    _td = soup.find(text="Licensee Name")  # this is pretty fragile just searching for "Licensee Name"
     if _td:
-        table =_td.find_parent("table")
+        table = _td.find_parent("table")
     else:
         continue
     ordered_headers = []

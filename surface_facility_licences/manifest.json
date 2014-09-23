@@ -1,6 +1,6 @@
 {
   "bot_id": "surface_facility_licenses",
-  "title": "Surface Facility Approvals Daily List (Alberta, Canada)",
+  "title": "Surface facility approvals in Alberta bot",
   "description": "A list released by the Alberta Energy Regulator of daily surface facility licenses issued every day",
   "language": "python",
   "data_type": "primary data",
@@ -14,7 +14,7 @@
   "frequency": "daily",
   "incremental": "true",
   "publisher": {
-    "name": "ACILITY APPROVAL DAILY LISTINGS - ALBERTA, CANADA",
+    "name": "Alberta Energy Regulator",
     "url": "http://www.aer.ca/data-and-publications/activity-and-data/st97",
     "terms": "Information on this site has been posted with the intent that it be readily available for personal and public noncommercial (educational) use.",
     "terms_url": "http://www.aer.ca/copyright-disclaimer"
