@@ -1,3 +1,6 @@
 # Ignore any output and data files created during validation
 output*
 data*
+
+# Also ignore any dirs that I've created to store offline files during testing
+testdata*
