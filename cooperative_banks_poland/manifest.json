@@ -1,7 +1,7 @@
 {
   "bot_id": "cooperative_banks_poland",
-  "title": "My simple bot",
-  "description": "This is a simple bot",
+  "title": "Co-Operative Banks in Poland",
+  "description": "Bot that generates a list of co-operative banks in Poland including their address and contact details",
   "language": "python",
   "data_type": "primary data",
   "identifying_fields": [
@@ -13,9 +13,9 @@
   ],
   "frequency": "monthly",
   "publisher": {
-    "name": "Publisher of the data",
-    "url": "Publisher's website",
-    "terms": "Copyright terms (e.g. Open Government License, n/a, etc)",
-    "terms_url": "A place where these terms can be checked or verified"
+    "name": "Polish Financial Supervision Authority",
+    "url": "http://www.knf.gov.pl/",
+    "terms": "",
+    "terms_url": "http://www.knf.gov.pl/en/nota_prawna/index.html"
   }
 }
