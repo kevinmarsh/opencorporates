@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import json
+import codecs
 import datetime
+import json
 import re
 import requests
 import turbotlib
@@ -9,7 +10,8 @@ import turbotlib
 
 turbotlib.log('Starting run...')
 
-source_url = 'http://www.aer.ca/data/conwell/ConWell.txt'
+# Obscure the url from search engines since code may end up on github
+source_url = codecs.decode('uggc://jjj.nre.pn/qngn/pbajryy/PbaJryy.gkg', 'rot_13')
 response = requests.get(source_url, timeout=20)
 
 # So this is a plain text file, not delineated at all, luckily they have

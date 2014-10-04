@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import json
+import codecs
 import datetime
-import turbotlib
+import json
 import requests
+import turbotlib
 
 from bs4 import BeautifulSoup
 
@@ -22,7 +23,8 @@ sample_date = str(datetime.date.today())
 base_url ='http://www.knf.gov.pl'
 
 # This is the first page in about 20~ paginated tables
-target_url = 'http://www.knf.gov.pl/podmioty/findInDetail.action?ctype=Banki+sp%C3%B3%C5%82dzielcze&ajax=true&random=0.20882477751001716&pb.start=0'
+# Obscure the url from search engines since code may end up on github
+target_url = codecs.decode('uggc://jjj.xas.tbi.cy/cbqzvbgl/svaqVaQrgnvy.npgvba?pglcr=Onaxv+fc%P3%O3%P5%82qmvrypmr&nwnk=gehr&enaqbz=0.20882477751001716&co.fgneg=0', 'rot_13')
 while target_url:
     soup = get_soup(target_url, session)
     for tr in soup.find_all('tr')[1:]:
